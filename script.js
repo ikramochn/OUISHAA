@@ -1,6 +1,6 @@
 // IMPORTANT: Replace the placeholder with your WhatsApp number in international format.
  // Algeria example: 213XXXXXXXXX (without +, spaces, or leading 0).
-const WHATSAPP_NUMBER = "0794606730";
+const WHATSAPP_NUMBER = "213794606730";
 const UNIT_PRICE = 2500;
 
 document.getElementById("orderForm").addEventListener("submit", function (event) {
