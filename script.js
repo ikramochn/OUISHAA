@@ -30,10 +30,7 @@ document.getElementById("orderForm").addEventListener("submit", function (event)
 
 نستنى تأكيد الطلب، شكراً!`;
 
-const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+const url = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(message)}`;
 
-console.log("WhatsApp number:", WHATSAPP_NUMBER);
-console.log("WhatsApp URL:", url);
-
-window.open(url, "_blank");
+window.location.href = url;
 });
